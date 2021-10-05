@@ -1,0 +1,17 @@
+# MicroFaaS Orchestrator
+
+[Unit]
+Description=MicroFaaS Orchestrator
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+Nice=-10
+User=debian
+Group=debian
+WorkingDirectory=/home/debian/MicroFaaS/
+ExecStart=/usr/bin/python3 /home/debian/MicroFaaS/orchestrator.py
+
+[Install]
+WantedBy=multi-user.target
