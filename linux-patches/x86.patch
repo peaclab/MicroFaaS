@@ -1380,39 +1380,6 @@ diff '--exclude=.git' -ru linux/.config linux-minimal/.config
  # CONFIG_TEST_MEMCAT_P is not set
  # CONFIG_TEST_STACKINIT is not set
  # CONFIG_TEST_MEMINIT is not set
-diff '--exclude=.git' -ru linux/.gitignore linux-minimal/.gitignore
---- linux/.gitignore	2021-10-05 15:08:11.263518048 -0400
-+++ linux-minimal/.gitignore	2021-07-12 12:27:16.363687950 -0400
-@@ -11,6 +11,7 @@
- # Normal rules (sorted alphabetically)
- #
- .*
-+!.config
- *.a
- *.asn1.[ch]
- *.bin
-Only in linux-minimal/: .tmp_730567
-Only in linux: README
-Only in linux-minimal/: README.md
-Only in linux-minimal/arch/arm/boot: Image
-Only in linux-minimal/arch/arm/boot/compressed: ashldi3.S
-Only in linux-minimal/arch/arm/boot/compressed: bswapsdi2.S
-Only in linux-minimal/arch/arm/boot/compressed: hyp-stub.S
-Only in linux-minimal/arch/arm/boot/compressed: lib1funcs.S
-Only in linux-minimal/arch/arm/boot/compressed: piggy_data
-Only in linux-minimal/arch/arm/boot/compressed: vmlinux
-Only in linux-minimal/arch/arm/boot/compressed: vmlinux.lds
-Only in linux-minimal/arch/arm/boot: dtb
-Only in linux-minimal/arch/arm/boot: zImage
-Only in linux-minimal/arch/arm/boot: zImageAppended
-Only in linux-minimal/arch/arm/include: generated
-Only in linux-minimal/arch/arm/kernel: vmlinux.lds
-Only in linux-minimal/arch/arm/mach-omap2: pm-asm-offsets.h
-Only in linux-minimal/arch/arm/vdso: vdso.lds
-Only in linux-minimal/arch/arm/vdso: vdso.so
-Only in linux-minimal/arch/arm/vdso: vdso.so.dbg
-Only in linux-minimal/arch/arm/vdso: vdso.so.raw
-Only in linux-minimal/arch/arm/vdso: vdsomunge
 diff '--exclude=.git' -ru linux/drivers/net/phy/smsc.c linux-minimal/drivers/net/phy/smsc.c
 --- linux/drivers/net/phy/smsc.c	2021-10-05 14:57:21.228227200 -0400
 +++ linux-minimal/drivers/net/phy/smsc.c	2021-07-12 12:27:18.715735846 -0400
@@ -1469,32 +1436,14 @@ diff '--exclude=.git' -ru linux/drivers/net/phy/smsc.c linux-minimal/drivers/net
  }
  
  static int lan911x_config_init(struct phy_device *phydev)
-Only in linux-minimal/: preconfig_scripts
-Only in linux-minimal/: rootfs.ext2
-Only in linux/scripts/basic: .fixdep.cmd
-Only in linux/scripts/kconfig: .conf.cmd
-Only in linux/scripts/kconfig: .conf.o.cmd
-Only in linux/scripts/kconfig: .confdata.o.cmd
-Only in linux/scripts/kconfig: .expr.o.cmd
-Only in linux/scripts/kconfig: .lexer.lex.c.cmd
-Only in linux/scripts/kconfig: .lexer.lex.o.cmd
-Only in linux/scripts/kconfig: .parser.tab.h.cmd
-Only in linux/scripts/kconfig: .parser.tab.o.cmd
-Only in linux/scripts/kconfig: .preprocess.o.cmd
-Only in linux/scripts/kconfig: .symbol.o.cmd
-Only in linux/scripts/kconfig: .util.o.cmd
-Only in linux/scripts/kconfig: conf.o
-Only in linux/scripts/kconfig: confdata.o
-Only in linux/scripts/kconfig: expr.o
-Only in linux/scripts/kconfig: lexer.lex.c
-Only in linux/scripts/kconfig: lexer.lex.o
-Only in linux/scripts/kconfig: parser.tab.c
-Only in linux/scripts/kconfig: parser.tab.h
-Only in linux/scripts/kconfig: parser.tab.o
-Only in linux/scripts/kconfig: preprocess.o
-Only in linux/scripts/kconfig: symbol.o
-Only in linux/scripts/kconfig: util.o
-Only in linux-minimal/tools/objtool/arch/x86: lib
-Only in linux-minimal/tools/objtool: fixdep
-Only in linux-minimal/tools/objtool: objtool
-Only in linux: x86.patch
+diff '--exclude=.git' -ru linux/.gitignore linux-minimal/.gitignore
+--- linux/.gitignore	2021-10-05 15:08:11.263518048 -0400
++++ linux-minimal/.gitignore	2021-07-12 12:27:16.363687950 -0400
+@@ -11,6 +11,7 @@
+ # Normal rules (sorted alphabetically)
+ #
+ .*
++!.config
+ *.a
+ *.asn1.[ch]
+ *.bin
