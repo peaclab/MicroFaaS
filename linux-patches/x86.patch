@@ -1,6 +1,6 @@
-diff '--exclude=.git' -ru linux/.config linux-minimal/.config
---- linux/.config	2021-10-05 16:12:19.009225079 -0400
-+++ linux-minimal/.config	2021-10-05 16:12:52.873199102 -0400
+diff '--exclude=.git' -ru .config .config
+--- .config	2021-10-05 16:12:19.009225079 -0400
++++ .config	2021-10-05 16:12:52.873199102 -0400
 @@ -31,12 +31,12 @@
  CONFIG_HAVE_KERNEL_LZO=y
  CONFIG_HAVE_KERNEL_LZ4=y
@@ -1380,9 +1380,9 @@ diff '--exclude=.git' -ru linux/.config linux-minimal/.config
  # CONFIG_TEST_MEMCAT_P is not set
  # CONFIG_TEST_STACKINIT is not set
  # CONFIG_TEST_MEMINIT is not set
-diff '--exclude=.git' -ru linux/drivers/net/phy/smsc.c linux-minimal/drivers/net/phy/smsc.c
---- linux/drivers/net/phy/smsc.c	2021-10-05 14:57:21.228227200 -0400
-+++ linux-minimal/drivers/net/phy/smsc.c	2021-07-12 12:27:18.715735846 -0400
+diff '--exclude=.git' -ru drivers/net/phy/smsc.c drivers/net/phy/smsc.c
+--- drivers/net/phy/smsc.c	2021-10-05 14:57:21.228227200 -0400
++++ drivers/net/phy/smsc.c	2021-07-12 12:27:18.715735846 -0400
 @@ -107,6 +107,13 @@
  
  static int smsc_phy_config_init(struct phy_device *phydev)
@@ -1436,14 +1436,3 @@ diff '--exclude=.git' -ru linux/drivers/net/phy/smsc.c linux-minimal/drivers/net
  }
  
  static int lan911x_config_init(struct phy_device *phydev)
-diff '--exclude=.git' -ru linux/.gitignore linux-minimal/.gitignore
---- linux/.gitignore	2021-10-05 15:08:11.263518048 -0400
-+++ linux-minimal/.gitignore	2021-07-12 12:27:16.363687950 -0400
-@@ -11,6 +11,7 @@
- # Normal rules (sorted alphabetically)
- #
- .*
-+!.config
- *.a
- *.asn1.[ch]
- *.bin
