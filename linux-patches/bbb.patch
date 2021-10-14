@@ -1,6 +1,6 @@
-diff -ru linux/.config linux-minimal/.config
---- linux/.config	2021-10-05 15:14:45.699468550 -0400
-+++ linux-minimal/.config	2021-10-05 13:27:16.540540120 -0400
+diff -ru .config .config
+--- .config	2021-10-05 15:14:45.699468550 -0400
++++ .config	2021-10-05 13:27:16.540540120 -0400
 @@ -18,6 +18,7 @@
  #
  # General setup
@@ -5462,9 +5462,9 @@ diff -ru linux/.config linux-minimal/.config
  # CONFIG_MEMTEST is not set
  # end of Kernel Testing and Coverage
  # end of Kernel hacking
-diff -ru linux/drivers/net/phy/smsc.c linux-minimal/drivers/net/phy/smsc.c
---- linux/drivers/net/phy/smsc.c	2021-10-05 14:57:21.228227200 -0400
-+++ linux-minimal/drivers/net/phy/smsc.c	2021-10-05 13:27:20.008539547 -0400
+diff -ru drivers/net/phy/smsc.c drivers/net/phy/smsc.c
+--- drivers/net/phy/smsc.c	2021-10-05 14:57:21.228227200 -0400
++++ drivers/net/phy/smsc.c	2021-10-05 13:27:20.008539547 -0400
 @@ -107,6 +107,13 @@
  
  static int smsc_phy_config_init(struct phy_device *phydev)
@@ -5518,18 +5518,7 @@ diff -ru linux/drivers/net/phy/smsc.c linux-minimal/drivers/net/phy/smsc.c
  }
  
  static int lan911x_config_init(struct phy_device *phydev)
-Only in linux/: .git
-diff -ru linux/.gitignore linux-minimal/.gitignore
---- linux/.gitignore	2021-10-05 15:08:11.263518048 -0400
-+++ linux-minimal/.gitignore	2021-10-05 13:27:16.540540120 -0400
-@@ -11,6 +11,7 @@
- # Normal rules (sorted alphabetically)
- #
- .*
-+!.config
- *.a
- *.asn1.[ch]
- *.bin
+
 Only in linux/include: config
 Only in linux/include: generated
 Only in linux-minimal/: patches
