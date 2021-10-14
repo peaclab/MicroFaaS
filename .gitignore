@@ -131,3 +131,6 @@ dmypy.json
 
 # MicroFaaS
 microfaas*results*
+
+# Existing sdcard image
+sdcard.img
