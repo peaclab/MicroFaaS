@@ -20,7 +20,7 @@ mv ../MicroFaaS .
 #git checkout stable/linux-5.11.y
 curl -O https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.11.22.tar.xz
 tar -xvf linux-5.11.22.tar.xz
-mv linux-5.11.22 linux-minimal
+
 
 #Clone linux-initramfs with submodules
 git clone --recurse-submodules -j8 git@github.com:peaclab/linux-initramfs.git

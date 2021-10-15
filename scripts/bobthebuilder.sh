@@ -7,7 +7,7 @@ mkdir $DIR/.tmp-initramfs
 mv .git $DIR/.tmp-initramfs
 mv .gitmodules $DIR/.tmp-initramfs
 
-cd $DIR/linux
+cd $DIR/linux-minimal
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j 20 uImage LOADADDR=80008000
 mv arch/arm/boot/uImage $DIR/MicroFaaS/scripts/uboot-scripts
 cd $DIR/MicroFaaS/scripts/uboot-scripts
