@@ -14,11 +14,13 @@ cd ../../projectName
 mv ../MicroFaaS .
 
 #Clone linux 5.11.22
-git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
-git remote add stable git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
-git fetch stable
-git checkout stable/linux-5.11.y
-make CROSS_COMPILE=arm-linux-gnueabihf- ARCH=arm omap2plus_defconfig
+#git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+#git remote add stable git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
+#git fetch stable
+#git checkout stable/linux-5.11.y
+curl -O https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.11.22.tar.xz
+tar -xvf linux-5.11.22.tar.xz
+mv linux-5.11.22 linux-minimal
 
 #Clone linux-initramfs with submodules
 git clone --recurse-submodules -j8 git@github.com:peaclab/linux-initramfs.git
