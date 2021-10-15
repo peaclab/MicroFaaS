@@ -5,6 +5,10 @@ FaaS on small, embedded-system-like compute nodes
 
 * Python 3.7+
   * Adafruit_BBIO
+## Hardware Setup
+1. Set up a managed switch with gateway address set to a machine with a DHCP server running with the 192.168.1.x IP range.
+2. Connect all 'worker' Beaglebones into the switch. Connect an 'orchestrator' Beaglebone.
+3. To measure power consumption, plug managed switch and all Beaglebones into a powerstrip. Connect the powerstrip into a power logging device like the WattsUp Pro.
 
 ## Setting up the MicroFaaS environment
 ```
@@ -23,7 +27,7 @@ For X86 based Rack Server:
 bash projectName/MicroFaaS/scripts/patch-scripts/x86.sh
 ```
 
-## Building and Flashing Minimal Linux OS on Beaglebone Black
+## Building and Flashing Minimal Linux OS on Beaglebone Black Worker
 ```
 bash projectName/MicroFaaS/scripts/bobthebuilder.sh
 ```
