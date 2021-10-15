@@ -92,7 +92,7 @@ option4() {
 
 
 PS3='Insert SD card. Please enter your choice: '
-options=("Make and copy to SD" "Make sdcard.img only" "Copy to SD" "uBoot script" "Pull all files from GitHub" "Quit")
+options=("Make and copy to SD" "Make sdcard.img only" "Copy to SD" "uBoot script" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
