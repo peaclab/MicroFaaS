@@ -12,7 +12,7 @@ FaaS on small, embedded-system-like compute nodes
 
 ## Setting up the MicroFaaS environment
 ```
-clone latest repo
+# clone latest repo
 cd MicroFaaS
 bash scripts/setupenvironment.sh
 ```
@@ -20,10 +20,10 @@ This will move your current MicroFaaS directory into a larger project folder wit
 
 ## Patching Linux OS for Optimized Boot Time
 ```
-For ARM based BeagleBoneBlack:
+# For ARM based BeagleBoneBlack:
 bash projectName/MicroFaaS/scripts/patch-scripts/bbb-arm.sh
 
-For X86 based Rack Server:
+# For X86 based Rack Server:
 bash projectName/MicroFaaS/scripts/patch-scripts/x86.sh
 ```
 
