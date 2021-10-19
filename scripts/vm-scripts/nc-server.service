@@ -1,0 +1,21 @@
+[Unit]
+Description=Netcat-based Control Server for MicroFaaS VMs 
+After=network.target
+
+[Service]
+Type=simple
+User=microfaas
+Group=microfaas
+WorkingDirectory=~
+CapabilityBoundingSet=CAP_NET_ADMIN
+AmbientCapabilities=CAP_NET_ADMIN
+ProtectSystem=strict
+Environment=PATH=/home/microfaas/bin
+ExecStart=/usr/bin/ncat -lknv --recv-only --allow 192.168.1.0/24 192.168.1.201 1152 -e /bin/rbash
+KillMode=control-group
+Restart=always
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
