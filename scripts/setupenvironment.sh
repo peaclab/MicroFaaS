@@ -19,7 +19,7 @@ mv ../MicroFaaS .
 #git fetch stable
 #git checkout stable/linux-5.11.y
 curl -O https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.11.22.tar.xz
-tar -xvf linux-5.11.22.tar.xz
+tar -xf linux-5.11.22.tar.xz
 
 
 #Clone linux-initramfs with submodules
