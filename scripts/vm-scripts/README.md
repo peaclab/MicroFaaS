@@ -1,4 +1,5 @@
 # VM Script Usage
+![alt text](image.png)
 ## setup_br0.sh
 Creates a bridge network linked to a network interface used for tap networking by the virtual machines.  
 Usage:  
