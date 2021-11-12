@@ -58,4 +58,3 @@ Returns:
  ```
  python log_data.py
  ```
-
