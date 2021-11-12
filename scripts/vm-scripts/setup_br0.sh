@@ -15,6 +15,7 @@ ifconfig br0 192.168.1.201 netmask 255.255.255.0
 teardown(){
 echo "Tearing down tap networking"
 ip link del br0
+dhclient -v $ETH
 }
 
 while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do case $1 in
