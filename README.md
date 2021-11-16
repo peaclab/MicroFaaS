@@ -30,7 +30,15 @@ bash x86.sh
 ```
 
 ## Building the x86 kernel and running it in QEMU
-_TODO_
+After running the x86.sh script, build a bzImage from the new linux kernel configuration by running
+```
+cd projectName/linux-minimal
+make -j[numCores] bzImage
+```
+The new bzImage will be outputted to `linux-minimal/arch/x86/boot/bzImage`. Copy the bzImage to the home directory of the x86 server of the user running the Netcat server. Additionally, make a directory called bin and place the ifup.sh and ifdown.sh scripts from `MicroFaaS/scripts/vm-scripts`. To test if VMs are working, configure the settings.py on the orchestrator to include the relevent workers and run the following script from your local computer. 
+```
+bash microfaas-start-experiment.sh --vm
+```
 
 ## Building and Flashing Minimal Linux OS on Beaglebone Black Worker
 ```
