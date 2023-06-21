@@ -2,10 +2,11 @@
 FaaS on small, embedded-system-like compute nodes
 
 ### MicroFaaS with Custom Orchestrator (First Iteration)
-To setup the worker nodes for MicroFaaS, follow the instructions starting from [Requirements](./README.md#Requirements).
+#### Worker Nodes
+- To setup the worker nodes for MicroFaaS, follow the instructions starting from [Requirements](./README.md#Requirements).
 
 ### MicroFaaS with OpenFaaS (Second Iteration)
-
+- To setup the worker nodes for MicroFaaS, follow the instructions starting from [Requirements](./README.md#Requirements).
 
 ## Requirements
 
