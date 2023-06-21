@@ -3,12 +3,15 @@ FaaS on small, embedded-system-like compute nodes
 
 ### MicroFaaS with Custom Orchestrator (First Iteration)
 #### Worker Nodes
-- To setup the worker nodes for MicroFaaS, follow the instructions starting from [Requirements](./README.md#Requirements).
+- To setup the worker nodes for MicroFaaS, follow the instructions starting from [Requirements.](./README.md#Requirements)
 - Busybox filesystem for the worker nodes can be found [here.](https://github.com/peaclab/linux-initramfs)
+- Optimized Linux Kernel for MicroFaaS can be found [here.](https://github.com/peaclab/linux-minimal)
 
 ### MicroFaaS with OpenFaaS (Second Iteration)
 #### Worker Nodes
 - To setup the worker nodes for MicroFaaS, follow the instructions starting from [Requirements](./README.md#Requirements).
+- Busybox filesystem for the worker nodes can be found [here.](https://github.com/peaclab/linux-initramfs)
+- Optimized Linux Kernel for MicroFaaS can be found [here.](https://github.com/peaclab/linux-minimal)
 
 ## Requirements
 
