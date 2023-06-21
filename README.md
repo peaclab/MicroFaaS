@@ -31,7 +31,7 @@ FaaS on small, embedded-system-like compute nodes
 </p>
 Connect the orchestrator to the worker nodes using the following pins:
 
-` "3": ("BBBWorker", "P9_12"),
+``` "3": ("BBBWorker", "P9_12"),
  "4": ("BBBWorker", "P9_15"),
  "5": ("BBBWorker", "P9_23"),
  "6": ("BBBWorker", "P9_25"),
@@ -40,7 +40,7 @@ Connect the orchestrator to the worker nodes using the following pins:
  "9": ("BBBWorker", "P8_10"),
  "10": ("BBBWorker", "P8_11"),
  "11": ("BBBWorker", "P8_14"),
- "12": ("BBBWorker", "P9_26"),`
+ "12": ("BBBWorker", "P9_26"),```
 
 3. To measure power consumption, plug managed switch and all Beaglebones into a powerstrip. Connect the powerstrip into a power logging device like the WattsUp Pro.
 
