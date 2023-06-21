@@ -9,7 +9,7 @@ FaaS on small, embedded-system-like compute nodes
 
 #### Orchestrator Node
 
-### MicroFaaS with OpenFaaS (Second Iteration)
+### <b>MicroFaaS with OpenFaaS (Second Iteration)</b>
 #### Worker Nodes
 - To setup the worker nodes for MicroFaaS, follow the instructions starting from [Requirements](./README.md#Requirements).
 - Busybox filesystem for the worker nodes can be found [here.](https://github.com/peaclab/linux-initramfs) This repo does not need to be cloned by the user but can be done by running a bash script as instructed in the following sections.
