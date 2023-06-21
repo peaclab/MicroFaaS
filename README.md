@@ -8,8 +8,9 @@ FaaS on small, embedded-system-like compute nodes
 - Optimized Linux Kernel for MicroFaaS can be found [here.](https://github.com/peaclab/linux-minimal) This repo does not need to be cloned by the user but can be done by running a bash script as instructed in the following sections.
 
 #### Orchestrator Node
+- The following [folder](https://github.com/peaclab/MicroFaaS/tree/main/orchestrator) shows all the scripts used to run the custom orchestrator.
 
-### <b>MicroFaaS with OpenFaaS (Second Iteration)</b>
+### MicroFaaS with OpenFaaS (Second Iteration)
 #### Worker Nodes
 - To setup the worker nodes for MicroFaaS, follow the instructions starting from [Requirements](./README.md#Requirements).
 - Busybox filesystem for the worker nodes can be found [here.](https://github.com/peaclab/linux-initramfs) This repo does not need to be cloned by the user but can be done by running a bash script as instructed in the following sections.
