@@ -29,7 +29,19 @@ FaaS on small, embedded-system-like compute nodes
  <p align="center" width="100%">
     <img width="33%" src="BBB-pinLayout.png"> 
 </p>
- <img src="BBB-pinLayout.png"  width="300" class="center" >  
+Connect the orchestrator to the worker nodes using the following pins:
+```
+    "3": ("BBBWorker", "P9_12"),
+    "4": ("BBBWorker", "P9_15"),
+    "5": ("BBBWorker", "P9_23"),
+    "6": ("BBBWorker", "P9_25"),
+    "7": ("BBBWorker", "P9_27"),
+    "8": ("BBBWorker", "P8_8"),
+    "9": ("BBBWorker", "P8_10"),
+    "10": ("BBBWorker", "P8_11"),
+    "11": ("BBBWorker", "P8_14"),
+    "12": ("BBBWorker", "P9_26"),
+```
 3. To measure power consumption, plug managed switch and all Beaglebones into a powerstrip. Connect the powerstrip into a power logging device like the WattsUp Pro.
 
 ## Setting up the MicroFaaS environment
