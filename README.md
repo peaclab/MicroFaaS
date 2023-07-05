@@ -1,28 +1,31 @@
 # MicroFaaS
 FaaS on small, embedded-system-like compute nodes
 
-### MicroFaaS with Custom Orchestrator (First Iteration)
-#### Worker Nodes
+For more details, or to cite this project (both first and second iterations), please refer to our DATE'22 paper:
+> A. Byrne, Y. Pang, A. Zou, S. Nadgowda and A. K. Coskun, "MicroFaaS: Energy-efficient Serverless on Bare-metal Single-board Computers," _2022 Design, Automation & Test in Europe Conference & Exhibition (DATE)_, Antwerp, Belgium, 2022, pp. 754-759, [doi:10.23919/DATE54114.2022.9774688](https://doi.org/10.23919/DATE54114.2022.9774688).
+
+## MicroFaaS with Proof-of-concept Orchestrator (First Iteration)
+### Worker Nodes
 - To setup the worker nodes for MicroFaaS, follow the instructions starting from [Requirements.](./README.md#Requirements)
 - Busybox filesystem for the worker nodes can be found [here.](https://github.com/peaclab/linux-initramfs) This repo does not need to be cloned by the user but can be done by running a bash script as instructed in the following sections.
 - Optimized Linux Kernel for MicroFaaS can be found [here.](https://github.com/peaclab/linux-minimal) This repo does not need to be cloned by the user but can be done by running a bash script as instructed in the following sections.
 
-#### Orchestrator Node
-- The following [folder](https://github.com/peaclab/MicroFaaS/tree/main/orchestrator) shows all the scripts used to run the custom orchestrator.
+### Orchestrator Node
+- [This folder](https://github.com/peaclab/MicroFaaS/tree/main/orchestrator) shows all the scripts used to run the custom orchestrator.
 
-### MicroFaaS with OpenFaaS (Second Iteration)
-#### Worker Nodes
+## MicroFaaS on OpenFaaS (Second Iteration)
+### Worker Nodes
 - To setup the worker nodes for MicroFaaS, follow the instructions starting from [Requirements](./README.md#Requirements).
 - Busybox filesystem for the worker nodes can be found [here.](https://github.com/peaclab/linux-initramfs) This repo does not need to be cloned by the user but can be done by running a bash script as instructed in the following sections.
 - Optimized Linux Kernel for MicroFaaS can be found [here.](https://github.com/peaclab/linux-minimal) This repo does not need to be cloned by the user but can be done by running a bash script as instructed in the following sections.
 
-#### Orchestrator Node
-- The following [repo](https://github.com/peaclab/openfaas-microfaas/tree/master) provides all the necessary scripts to run MicroFaaS using the OpenFaaS API. 
+### Orchestrator Node
+- [This repo](https://github.com/peaclab/openfaas-microfaas/tree/master) provides all the necessary scripts to run MicroFaaS using the OpenFaaS API. 
 
 ## Requirements
-
 * Python 3.7+
-  * Adafruit_BBIO
+  * Adafruit_BBIO module
+ 
 ## Hardware Setup
 1. Set up a managed switch with gateway address set to a machine with a DHCP server running with the 192.168.1.x IP range.
 2. Connect all 'worker' Beaglebones into the switch. Connect an 'orchestrator' Beaglebone.
